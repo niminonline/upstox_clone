@@ -4,9 +4,516 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trading - Online Share Market Trading App in India Stock Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+
 </head>
 <body>
+    <div class="main" >
     
+        <div class="navbar-fullwidth">
+            <div class="navbar">
+            <div class="navbar-left">
+            <div class="navbar-logo">
+                <img id="primary-logo" src="./images/upstox-logo-primary.svg" alt="Navbar logo">
+            </div>
+
+            <div class="menu-items">
+                <ul>
+                    <li>Invest</li>
+                    <li>Trade</li>
+                    <li>Learn</li>
+                    <li>About us</li>
+                    <li>Partner with us</li>
+                    <li>Pricing</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navbar-right">
+            <div class="search-box">
+                <i id="search-icon" class= "fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search-text" placeholder="Search any stock (E.g: AXIS BANK)"></dinput>
+
+            </div>
+        <div class="navbar-buttons">
+            <button id="create-account" >Create Account</button>
+            <button id="sign-in">Sign in</button>
+        </div>
+    </div>
+        </div>
+        </div>
+
+
+        <div class="banner-main">
+            <div class="banner-left-section">
+                <h1 class="main-heading">Powerful Made Simple</h1>
+                <ul class="banner-links">
+                    <li>Futures & Options</li>
+                    <li>Stocks</li>
+                    <li>Mutual Funds</li>
+                    <li>IPOs</li>
+                </ul>
+                <div class="phone-number">
+                    <h3>+91</h3>
+                    <input class="phone-field" type="text" placeholder="Enter yur number">
+                </div>
+                <p>By signing up you agree to receive transaction updates on Whatsapp. You may also receive a call from an Upstox representative to help you with the account opening process.</p>
+                <div class="charge-cards">
+                    <div class="maintenance">
+                        <h2>₹0</h2>
+                        <h4>Account Maintenance</h4>
+                        <h5>To maintain your Demat Account*</h5>
+                    </div>
+                    <div class="brokerage">
+                        <h2>₹20</h2>
+                        <h4>Brokerage*</h4>
+                        <h5>Equity, F&O, commodity and currency orders</h5>
+                    </div>
+                </div>
+                <div class="banner-bottom">
+                    <div class="banner-btm-col1">
+                        <div class="banner-btm-row1">
+                            <h3>1 Cr+</h3>
+                            <img src="./images/aero.svg" alt="rocket image">
+                        </div>
+                        <h6>Happy Investors</h6>
+                    </div>
+
+                    <div class="banner-btm-col2">
+                        <div class="banner-btm-row1">
+                            <h3>4.4+</h3>
+                            <img src="./images/star.svg" alt="star image">
+                        </div>
+                        <h6>Avg. App Rating</h6>
+                    </div>
+
+                    <div class="banner-btm-col3">
+                        <div class="banner-btm-row1">
+                            <img src="./images/banner-footer.png" alt="banner footer image">
+                            <img src="./images/tiger-global-logo.svg" alt="tiger glbal logo">
+                        </div>
+                        <h6>Backed by the best</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner-right-section">
+                <img src="./images/light-banner-desk-slide-2.png" alt="mobile phone image">
+            </div>
+        </div>
+
+        <div class="asset-classes-container">
+            <div class="asset-heading">
+                <h5 class="orange-text-title">ASSET CLASSES</h5>
+                <h2 class="big-subtitle-black">Ways to grow your wealth</h2>
+            </div>
+            <ul class="ways-to-grow-items">
+                <li>Stocks</li>
+                <li>IPOs</li>
+                <li>Mutual Funds</li>
+                <li>Futures & Options</li>
+            </ul>
+            <div class="stocks">
+                <div class="stocks-col1">
+                    <img src="./images/grow-stock.png" alt="Stock image">
+                </div>
+                <div class="stocks-col2">
+                    <h4>Stocks</h4>
+                    <ul>
+                        <li>Discover stocks with smart lists and smart filters</li>
+                        <li>Access key company information</li>
+                        <li>Buy and sell stocks in a single click</li>
+                    </ul>
+                    <button class="create-account" id="start-inv-button"></button>
+                </div>
+            </div>
+        </div>
+        <div class="pricing-section-card">
+            <h1>Flat fees, no hidden <br> charges.</h1>
+            <img id="pricing-tree" src="./images/pricing-tree.png" alt="pricing tree image">
+            <div class="pricing">
+                <div class="commisions">
+                    <h2>₹0</h2>
+                    <h4>Commissions</h4>
+                    <h5>On investing in Mutual Funds and IPOs </h5>
+                </div>
+                <div class="maintenance">
+                    <h2>₹0</h2>
+                    <h4>Account Maintenance</h4>
+                    <h5>To maintain your Demat Account*</h5>
+                </div>
+                <div class="Brokerage">
+                    <h2>₹20</h2>
+                    <h4>Brokerage</h4>
+                    <h5>On Equity, F&O, commodity and <br> currency orders </h5>
+                </div>
+                <div class="pricing-bottom-row">
+                    <button class="btn-start-investing">Start Investing</button>
+                    <p>*Zero AMC is applicable for users onboarded from August 2021 onwards.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="calculator-button">
+            <button class="outlined-btn" id="brokerage-calc">Brokerage calculator</button>
+            <button class="outlined-btn" id="margin-calc">Margin calculator</button>
+        </div>
+
+        <div class="benefit-section">
+            <div class="benefit-section-title">
+                <h5 class="orange-text-title">BENEFITS</h5>
+                <h2 class="big-subtitle-black">We make investing work for you</h2>  
+                </div>
+                <div class="benefit-card-row1">
+
+                    <div class="benefit-card-col1">
+                        <img src="./images/PAPERLESS.png" alt="Paperless image">
+                        <h5>PAPERLESS</h5>
+                        <h2>Seamless account <br> opening</h2>
+                        <h3>Requires PAN + Aadhaar + eKYC only</h3>
+                    </div>
+
+                    <div class="benefit-card-col2">
+                        <img src="./images/benefit-card.png" alt="Benefits image">
+                        <h5>FAST</h5>
+                        <h2>Instant withdrawals</h2>
+                        <h3>Transfer funds from Upstox to your bank <br> account in just 15 minutes</h3>
+                    </div>
+                </div>
+
+                <div class="benefit-card-row2">
+                    <div class="benefit-card-row2-col1">
+                        <h5>EASY</h5>
+                        <h2>Learn. Decide. Invest.</h2>
+                        <h3>Learn all about investments from experts. Make informed decisions using smart tools. Invest easily with just a click.</h3>
+                    </div>
+
+                    <div class="benefit-card-row2-col2">
+                        <img src="./images/benefit-account-01.png" alt="Benefit account">
+                </div>
+            </div>
+            <button class="btn-start-investing">Start Investing</button>
+        </div>
+
+        <div class="learning-section">
+            <div class="learning-title">
+                <h5 class="orange-text-title">LEARNING</h5>
+                <h2 class="big-subtitle-black">We simplify investments for you</h2> 
+                <h4 class="second-sub-title"> Everything you need to know about investments in under a few minutes from our experts.</h4> 
+            </div>
+        <div class="learning-cards-container">
+
+
+            <div class="learning-card-col1">
+                <h4 class="purple-text">LEARN</h4>
+                <h2 class="learn-card-title"> Basics of Investments <br>#LearnWithUpstox ft. <br>Pranjal kamra</h2>
+                <h4 class="learn-card-body">A video series breaking <br> down the A-Z of <br> investing.</h4>
+                <img src="right-arrow" alt="Forward button">
+            </div>
+
+            <div class="learning-card-col2">
+                <h4 class="purple-text">WATCH</h4>
+                <h2 class="learn-card-title"> Market Analysis <br>#LearnWithUpstox ft. <br>Rachana Ranade</h2>
+                <h4 class="learn-card-body">A video series to learn <br>everything about Ratio <br>Analysis easily</h4>
+                <img src="right-arrow" alt="Forward button">
+            </div>
+
+            <div class="learning-card-col3">
+                <h4 class="purple-text">LEARN</h4>
+                <h2 class="learn-card-title"> Technical Analysis <br>#LearnWithUpstox ft. <br>Pranjal kamra</h2>
+                <h4 class="learn-card-body">A video series to learn how <br> to analyse stocks using <br>charts</h4>
+                <img src="right-arrow" alt="Forward button">
+            </div>
+
+            <div class="In the Press">
+                <h2 class="big-subtitle-black">In the Press</h2> 
+            </div>
+            <div class="press-logos">
+                <img class="press-logos" src="./images/news-1.png" alt="FirstPost-logo">
+                <img class="press-logos" src="./images/news-2.png" alt="TOI-logo">
+                <img class="press-logos" src="./images/news-3.png" alt="BS-logo">
+                <img class="press-logos" src="./images/news-4.png" alt="NDTV-logo">
+                <img class="press-logos" src="./images/news-5.png" alt="mint-logo">
+                <img class="press-logos" src="./images/news-6.png" alt="ET-logo">
+            </div>
+        </div>
+        </div>
+
+        <div class="customers-section">
+            <div class="customers-title">
+                <h2 class="big-subtitle-black">For you. And everyone.</h2> 
+                <h4 class="second-sub-title">We enable lakhs of Indians to achieve their financial dreams.</h4> 
+            </div>
+                <div class="customer-mosiac">
+                   
+                    <div class="cust-mosaic-col1">
+                        <img class="cust-mosaic-img" src="./images/invest.png" alt="Invest image1">
+                        <div class= "cust-mosaic-dummy-rect" id="cust-mosaic-row1-col2"></div>
+                    </div>
+
+                    <div class="cust-mosaic-col2">
+                        <div class= "cust-mosaic-dummy-rect" id="cust-mosaic-row1-col2"></div>
+                        <img class="cust-mosaic-img" src="./images/invest2.png" alt="Invest image2">
+                    </div>
+
+                    <div class="cust-mosaic-col3">
+                        <img class="cust-mosaic-img" src="./images/invest3.png" alt="Invest image3">
+                        <div class= "cust-mosaic-dummy-rect" id="cust-mosaic-row2-col3"></div>
+                    </div>
+                </div>
+
+                <button class="btn-start-investing">Start Investing</button>
+        </div>
+
+        <div class="testimonial">
+            <img src="./images/heart.png" alt="Heart Image">
+        </div>
+        <h2 class="big-subtitle-black">Here are a few reasons you should choose Upstox:</h2> 
+        <div class="testimonial-container">
+
+            <div class="testimonial-col1">
+                <h4 class="second-sub-title">Best trading application so far Excellent user interface. Easy to search for stocks. Margin trading facility is good.</h4> 
+                <div class="testi-customer-name">
+                    <img src="./images/Kaju-the-Guy-1.png" alt="user1 image">
+                    <h4 class="second-sub-title">MAHAJAN ARMAAN</h4>
+                </div>
+                    <h5 class="review-date">Reviewed on February 2021</h5>
+            </div>
+
+            <div class="testimonial-col2">
+                <h4 class="second-sub-title">One of the best trading platform. Smooth UI. All that you need for efficient trading, perfectly aligned and kept under a seamless platform!</h4> 
+                <div class="testi-customer-name">
+                    <img src="./images/sk.png" alt="user2 image">
+                    <h4 class="second-sub-title">SAJAN K.</h4>
+                </div>
+                    <h5 class="review-date">Reviewed on December 2020</h5>
+            </div>
+
+
+            <div class="testimonial-col3">
+                <h4 class="second-sub-title">A reliable app and highly trustworthy. No one should avoid taking benefit from such a great service! Designed for speed and comfort!</h4> 
+                <div class="testi-customer-name">
+                    <img src="./images/rb.png" alt="user3 image">
+                    <h4 class="second-sub-title">RIYA BORAH</h4>
+                </div>
+                    <h5 class="review-date">Reviewed on April 2020</h5>
+            </div>
+        </div>
+
+        <div class="awards">
+            <h2 class="big-subtitle-black">Awards & Accolades</h2> 
+            <div class="award-cards-container">
+
+                <div class="award-card-col1">
+                    <div class="award-logo-container">
+                        <img src="./images/award-cdsl-icon.png" alt="cdsl logo">
+                    </div>
+                    <h4 class="second-sub-title">Highest number of Demat Accounts in a single month by CDSL in October 2021</h4>
+                </div>
+
+                <div class="award-card-col2">
+                    <div class="award-logo-container">
+                        <img src="./images/award-india-icon.png" alt="India Fintech logo">
+                    </div>
+                    <h4 class="second-sub-title">Best innovation in wealth management in 2020</h4>
+                </div>
+
+                <div class="award-card-col3">
+                    <div class="award-logo-container">
+                        <img src="./images/award-cdsl-icon.png" alt="cdsl logo">
+                    </div>
+                    <h4 class="second-sub-title">Highest number of accounts in a single month by a broker in (2019, 2020)</h4>
+                </div>
+
+                <div class="award-card-col4">
+                    <div class="award-logo-container">
+                        <img src="./images/award-mcx-icon.png" alt="MCX logo">
+                    </div>
+                    <h4 class="second-sub-title">Most promising broking house of the year by MCX in 2019</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="download-app">
+            <div class="download-app-col1">
+                <img class="download-app-img" src="./images/download-app-mobile.png" alt="Download App image">
+            </div>
+            <div class="download-app-col2">
+                <p>Download one of India's</p>
+                <h2>Best trading app</h2>
+                <div class="app-download-logo">
+                    <img src="./images/google-play.svg" alt="Google Play logo">
+                    <img src="./images/app-store.svg" alt="Appstore logo">
+                </div>
+            </div>
+        </div>
+
+        <footer>
+
+            <div class="footer-row1">
+                <div class="footer-row1-col1">
+                    <img src="./images/upstrox-white-logo-footer.png" alt="Upstox logo">
+                    <p class="footer-text-regular">30th Floor, Sunshine Tower, Senapati Bapat Marg, Dadar (W), Mumbai, Maharashtra 400013</p>
+                    <img src="./images/google-play.svg" alt="Google play logo">
+                    <img src="./images/app-store.svg" alt="Appstore logo">
+                </div>
+
+                <div class="footer-row1-col2">
+                    <h4 class="footer-row1-title"> Products</h4>
+                    <ul>
+                        <li class="footer-menu-list">Pro web</li>
+                        <li class="footer-menu-list">Pro mobile</li>
+                        <li class="footer-menu-list">Mutual Funds</li>
+                        <li class="footer-menu-list">IPOs</li>
+                        <li class="footer-menu-list">Futures And Options</li>
+                        <li class="footer-menu-list">Stocks</li>
+                        <li class="footer-menu-list">Indices</li>
+                        <li class="footer-menu-list">Developer</li>
+                        <li class="footer-menu-list">Upstox x TradingView</li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-row1-col3">
+                    <h4 class="footer-row1-title"> Company</h4>
+                    <ul>
+                        <li class="footer-menu-list">About Us</li>
+                        <li class="footer-menu-list">Market Talk</li>
+                        <li class="footer-menu-list">Brokerage Charges</li>
+                        <li class="footer-menu-list">Refer and Earn</li>
+                        <li class="footer-menu-list">Announcements</li>
+                        <li class="footer-menu-list">Partner with us</li>
+                        <li class="footer-menu-list">Press Releases</li>
+                        <li class="footer-menu-list">Bug Bounty Program</li>
+                    </ul>
+                </div>
+
+                <div class="footer-row1-col4">
+                    <h4 class="footer-row1-title"> Services</h4>
+                    <ul>
+                        <li class="footer-menu-list">Demat Account</li>
+                        <li class="footer-menu-list">Trading Account</li>
+                        <li class="footer-menu-list">Commodity Trading</li>
+                        <li class="footer-menu-list">Equity Trading</li>
+                        <li class="footer-menu-list">Futures And Options</li>
+                        <li class="footer-menu-list">Download Forms</li>
+                        <li class="footer-menu-list">Margin sheets</li>
+                        <li class="footer-menu-list">Glossary</li>
+                        <li class="footer-menu-list">Help Center</li>
+                    </ul>
+                </div>
+
+                <div class="footer-row1-col5">
+                    <h4 class="footer-row1-title"> Social</h4>
+                    <ul>
+                        <li class="footer-menu-list"><i class="fa-brands fa-twitter"></i>Twitter</li>
+                        <li class="footer-menu-list"><i class="fa-brands fa-telegram"></i>Telegram</li>
+                        <li class="footer-menu-list"><i class="fa-brands fa-linkedin-in"></i>Linkedin</li>
+                        <li class="footer-menu-list"><i class="fa-brands fa-youtube"></i>Youtube</li>
+                        <li class="footer-menu-list"><i class="fa-brands fa-instagram"></i>Instagram</li>
+                </div>
+            </div>
+
+            <div class="footer-row-2">
+                <h4 class="footer-text-bold">Stocks</h4>
+                <ul>
+                    <li class="a-z-horizontal">A</li>
+                    <li class="a-z-horizontal">B</li>
+                    <li class="a-z-horizontal">C</li>
+                    <li class="a-z-horizontal">D</li>
+                    <li class="a-z-horizontal">E</li>
+                    <li class="a-z-horizontal">F</li>
+                    <li class="a-z-horizontal">G</li>
+                    <li class="a-z-horizontal">H</li>
+                    <li class="a-z-horizontal">I</li>
+                    <li class="a-z-horizontal">J</li>
+                    <li class="a-z-horizontal">K</li>
+                    <li class="a-z-horizontal">L</li>
+                    <li class="a-z-horizontal">M</li>
+                    <li class="a-z-horizontal">N</li>
+                    <li class="a-z-horizontal">O</li>
+                    <li class="a-z-horizontal">P</li>
+                    <li class="a-z-horizontal">Q</li>
+                    <li class="a-z-horizontal">R</li>
+                    <li class="a-z-horizontal">S</li>
+                    <li class="a-z-horizontal">T</li>
+                    <li class="a-z-horizontal">U</li>
+                    <li class="a-z-horizontal">V</li>
+                    <li class="a-z-horizontal">W</li>
+                    <li class="a-z-horizontal">X</li>
+                    <li class="a-z-horizontal">Y</li>
+                    <li class="a-z-horizontal">Z</li>
+                    <li><a href="others/" class="a-z-horizontal">Others</li>
+                </ul>
+            </div>
+
+            <div class="footer-expand-menu-container">
+                <ul>
+                    <li>Popular Stocks</li>
+                    <li>Future & Options</li>
+                    <li>Indian Indices</li>
+                    <li>Calculators</li>
+                    <li>Learning Center</li>
+                    <li>More</li>
+                </ul>
+                <ul>
+                    <li>Banking</li>
+                    <li>Savings Account</li>
+                    <li>Saving Schemes</li>
+                    <li>IPO Learn</li>
+                    <li>F&O - Learning</li>
+                </ul>
+            </div>
+
+            <div class="footer-para-container">
+                <p class="footer-para-text">RKSV Securities: SEBI Registration No. INZ000185137 | NSE Member Code: 13942 | BSE Clrg Code: 6155 | CDSL: IN-DP-CDSL- 00282534 | NSDL: IN-DP-NSDL-11496819 | CDSL: IN-DP-CDSL- 00283831 | NSDL: IN-DP-NSDL-11497282 | Compliance officer: Mr. Manoj Agarwal. Tel no: (022) 24229920. Email: compliance@rksv.in | RKSV Commodities MCX Member Code: 46510 | SEBI Regn. No. INZ000015837 | RKSV Securities CIN number : U74900DL2009PTC189166 | RKSV Commodities CIN number: U74110DL2012PTC236371 | Compliance officer: Mr. Amit Lalan. Tel no: (022) 24229920. Email: compliance@rksv.in | Registered Address: 807, New Delhi House Barakhamba Road, Connaught Place, New Delhi- 110001. | Correspondence Address: RKSV/Upstox, 30th Floor, Sunshine Tower, Senapati Bapat Marg, Dadar (W), Mumbai, Maharashtra 400013. For any complaints, email at complaints@upstox.com and complaints.mcx@upstox.com | Procedure to file a complaint on SEBI SCORES: Register on SCORES portal. Mandatory details for filing complaints on SCORES: Name, PAN, Address, Mobile Number, E-mail ID.
+                    Benefits: Effective Communication, Speedy redressal of the grievances. | Please ensure you carefully read the Risk Disclosure Document as prescribed by SEBI and our Terms of Use and Privacy Policy.
+                    
+                    The brand name Upstox and logo are the registered trademarks of RKSV Securities India Pvt. Ltd. | The cost-effective brokerage plans make Upstox a trustworthy and reliable online stockbroker. Available on both the web and mobile, it offers unmatched convenience to traders. If you are considering opening a demat account online, then Upstox is just the right place for you.
+                    
+                    Disclaimer: Investment in securities market are subject to market risks, read all the related documents carefully before investing.
+                    *Brokerage will not exceed the SEBI prescribed limit
+                    
+                    Attention Investors: As per NSE circular dated July 6, 2022, BSE circular dated July 6, 2022, MCX circular dated July 11, 2022 investors are cautioned to abstain them from dealing in any schemes of unauthorised collective investments/portfolio management, indicative/ guaranteed/fixed returns / payments etc. Investors are further cautioned to avoid practices like:
+                    a) Sharing i) trading credentials – login id & passwords including OTP’s., ii) trading strategies, iii) position details.
+                    b) Trading in leveraged products /derivatives like Options without proper understanding, which could lead to losses.
+                    c) Writing/ selling options or trading in option strategies based on tips, without basic knowledge & understanding of the product and its risks
+                    d) Dealing in unsolicited tips through like Whatsapp, Telegram, Instagram, YouTube, Facebook, SMS, calls, etc.
+                    e) Trading / Trading in “Options” based on recommendations from unauthorised / unregistered investment advisors and influencers.
+                    
+                    Kindly, read the Advisory Guidelines For Investors as prescribed by the Exchange with reference to their circular dated 27th August, 2021 regarding investor awareness and safeguarding client's assets : Advisory Guidelines For Investors
+                    
+                    Kindly, read the advisory as prescribed by the Exchange with reference to their circular dated January 14, 2022 regarding Updation of mandatory KYC fields by March 31, 2022: KYC Updation
+                    
+                    Attention Investors: Prevent unauthorized transactions in your demat account. Update your mobile number with your depository participant. Receive alerts on your registered mobile number for debi... <span><a href="#">Read More</a></span>
+                </p>
+            </div>
+            <div class="footer-btm-container">
+                <div class="footer-btm-left">
+                    <ul>
+                        <li>Sitemap</li>
+                        <li>Terms of Use and Privacy Policy</li>
+                        <li>Trust &#038; Security</li>
+                        <li>Careers</li>
+                        <li>Contact Us</li>
+                        <li>Investor Charter</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+                <div class="footer-btm-right">
+                    <p>Made with ❤️ in India | Copyright &copy; 2023, <a href="https://upstox.com/"><em>Upstox</p>
+                </div>
+
+
+
+
+            </div>
+        </footer>
+    
+    </div>
+
+
 </body>
 </html>

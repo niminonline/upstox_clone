@@ -1,0 +1,17 @@
+:root{
+
+    --purple: #41246e;
+    --lightpurple: #d0bcff;
+    --orange: #ff9c7f;
+    --yellow: #ffd27c;
+    --skyblue: #9beaea;
+    --darkgrey: #333c46;
+    --lightyellow: #ffeacf;
+    --white: #fff;
+    --text: #262626;
+    --red:#db542a;
+    --transp-black:rgba(0,0,0,.5);
+    --search-bg-grey:#f2f2f2;
+    --text-color-grey:#4b4b4b;
+    --black:#000;
+}

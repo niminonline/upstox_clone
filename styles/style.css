@@ -1,0 +1,91 @@
+@import "./constants.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
+
+body{
+    padding:0px;
+    margin:0px;
+    font-family: 'Inter',Arial, Helvetica, sans-serif;
+}
+.navbar-fullwidth{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    position:sticky;
+
+}
+.navbar{
+    display: flex;
+    width: 70%;
+    padding:20px; 
+    justify-content: space-between;
+}
+.navbar-left{
+    display: flex;
+}
+#primary-logo{
+    width:90px;
+    height: 28px;;
+}
+.menu-items ul{
+display: flex;
+margin-top: 8px;
+}
+.menu-items ul li{
+    font-size: 16px;
+    list-style: none;
+    color: var(--black);
+    margin-right: 20px;
+    font-weight: 400;
+}
+
+.navbar-right{
+display: flex;
+justify-content: flex-end;
+
+
+}
+.search-box{
+    width: 260px;
+    height: 32px;  
+    background-color: var(--search-bg-grey);
+    border-radius: 10px;
+    padding: 2px;
+    align-items:baseline;
+
+    
+}
+.search-box:focus{
+    border: 2px solid black;
+}
+#search-icon{
+padding: 6px;
+}
+#search-text{
+    outline: none;
+    border: none;
+    width:220px;
+    background-color: var(--search-bg-grey);
+}
+#create-account{
+    margin-left: 20px;
+    background-color: var(--purple);
+    width:128px;
+    height: 38px;
+    border-radius: 20px;
+    color: var(--white);
+    font-weight: 900;
+    border: none;
+    font-size: 14px;
+}
+#sign-in{
+    margin-left: 20px;
+    background-color: var(--white);
+    width:100px;
+    height: 38px;
+    border-radius: 20px;
+    color: var(--purple);
+    font-weight: 900;
+    border: 1px solid #41246e;
+    font-size: 14px;
+}

@@ -1,17 +1,32 @@
 @import "./constants.css";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body{
     padding:0px;
     margin:0px;
     font-family: 'Inter',Arial, Helvetica, sans-serif;
 }
+.horizontal-menu{
+    display:flex;
+    list-style: none;
+}
+.font-small-12{
+    font-size: 12px;
+    line-height: 15px;
+}
+.font-14-h5{
+    font-size: 14px;
+    margin:0px 0px;
+}
 .navbar-fullwidth{
     display: flex;
     justify-content: center;
-    height: 100px;
+    height: 70px;
     width: 100%;
     position:sticky;
+    top:0;
+    background-color: var(--white);
+    box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.1);
 
 }
 .navbar{
@@ -52,8 +67,6 @@ justify-content: flex-end;
     border-radius: 10px;
     padding: 2px;
     align-items:baseline;
-
-    
 }
 .search-box:focus{
     border: 2px solid black;
@@ -80,7 +93,6 @@ padding: 6px;
 }
 #sign-in{
     margin-left: 20px;
-    background-color: var(--white);
     width:100px;
     height: 38px;
     border-radius: 20px;
@@ -88,4 +100,135 @@ padding: 6px;
     font-weight: 900;
     border: 1px solid #41246e;
     font-size: 14px;
+}
+
+.banner-main{
+    margin: none;
+    height: 75vh;
+    width:100%;
+    padding: none;
+    background-image: -webkit-linear-gradient(330deg,var(--darkblue)12%,var(--purple)20%,var(--white) 75%);
+}
+.banner-contents{
+    width:70%;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner-left-section{
+    margin: none;
+    color: var(--white);
+
+}   
+.main-heading{
+    color: var(--white);
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    padding-top: 3.8rem;
+    margin-top:0px;
+    
+}
+.banner-links li{
+    padding: 0px 20px;
+    margin-left: 0;
+    color: var(--white);
+    font-size: 16px;
+    border-right: 1px solid var(--white);
+}
+.banner-links li:last-child{
+    border: none;
+}
+.banner-links{
+    padding:0px;
+}
+.phone-number{
+width:467px;
+height:64px;
+background-color: var(--white);
+border-radius: 15px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0px 10px;
+}
+#country-code{
+    color: var(--black);
+}
+.phone-field{
+    border:none;
+    outline:none;
+    width:350px;
+}
+.go-button{
+    width:48px;
+    height: 48px;
+    background-color: var(--darkblue);
+    border-radius: 10px;
+    border:none;
+}
+.charge-cards-container{
+    width: 38vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+ 
+}
+.charge-card{
+    width:226px;
+    height: 100px;
+    background-color:var(--darkblue);
+    border-radius: 5px;
+    border-left: 5px solid var(--lightblue);
+    line-height: 8px;
+    padding: 10px;
+}
+.banner-bottom{
+    display: flex;
+    padding:20px;
+    width:30vw;
+    height: 56px;
+    line-height: 30px;
+}
+
+.banner-btm-row1{
+display: flex;
+align-items: center;
+
+}
+.banner-btm-row1 h2{
+    margin: 0px 0px;
+}
+.banner-btm-col{
+    border-right: 1px solid var(--white);
+    padding:15px;
+    width:120px;
+    height: 50px;
+}
+.banner-btm-col h6{
+font-size: 14px;
+padding: 0px;
+margin: 0px;
+font-weight: 600;
+}
+.banner-btm-col:last-child {
+    border-right:none;
+}
+.banner-btm-col:first-child{
+    padding-left:0px;
+}
+.banner-thumbnail-img{
+    width:24px;
+    height:24px;
+    margin-left: 10px;
+    padding-top: 0px;;
+}
+.tiger-global-cont{
+    height: 22px;
+    width: 74px;
+    background-color: var(--white);
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    padding: 2px;
 }

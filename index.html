@@ -11,7 +11,6 @@
 </head>
 <body>
     <div class="main" >
-    
         <div class="navbar-fullwidth">
             <div class="navbar">
             <div class="navbar-left">
@@ -38,8 +37,8 @@
 
             </div>
         <div class="navbar-buttons">
-            <button id="create-account" >Create Account</button>
-            <button id="sign-in">Sign in</button>
+            <button class="purple-filled-btn" >Create Account</button>
+            <button class="outlined-btn">Sign in</button>
         </div>
     </div>
         </div>
@@ -47,7 +46,8 @@
 
 
         <div class="banner-main">
-            <div class="banner-contents">
+            <div class="body-contents-main">
+               <div class="banner-contents">
             <div class="banner-left-section">
                 <h1 class="main-heading">Powerful Made Simple</h1>
                 <ul class="banner-links horizontal-menu">
@@ -61,7 +61,7 @@
                     <input class="phone-field" type="text" placeholder="Enter your number">
                     <button class="go-button"> <img src="./images/banner-input-arrow.png" alt="Go-Button"></button>
                 </div>
-                <p class="font-small-12">By signing up you agree to receive transaction updates on Whatsapp. You may also receive a call from an Upstox representative to help you with the account opening process.</p>
+                <p class="font-small-12">By signing up you agree to receive transaction updates on Whatsapp. You may also <br> receive a call from an Upstox representative to help you with the account opening <br> process.</p>
                 <div class="charge-cards-container">
                     <div class="maintenance charge-card">
                         <h2>₹0</h2>
@@ -105,17 +105,19 @@
             </div>
 
             <div class="banner-right-section">
-                <img src="./images/light-banner-desk-slide-2.png" alt="mobile phone image">
+                <img src="./images/dark-slide-2.png" alt="mobile phone image">
             </div>
         </div>
     </div>
+    </div>
 
+    <div class="body-contents">
         <div class="asset-classes-container">
             <div class="asset-heading">
-                <h5 class="orange-text-title">ASSET CLASSES</h5>
-                <h2 class="big-subtitle-black">Ways to grow your wealth</h2>
+                <h5 class="section-subtitle-red">ASSET CLASSES</h5>
+                <h2 class="section-title">Ways to grow your wealth</h2>
             </div>
-            <ul class="ways-to-grow-items">
+            <ul class="ways-to-grow-items horizontal-menu">
                 <li>Stocks</li>
                 <li>IPOs</li>
                 <li>Mutual Funds</li>
@@ -126,117 +128,127 @@
                     <img src="./images/grow-stock.png" alt="Stock image">
                 </div>
                 <div class="stocks-col2">
-                    <h4>Stocks</h4>
-                    <ul>
+                    <h4 id="stocks-title">Stocks</h4>
+                    <ul class="stocks-bullets">
                         <li>Discover stocks with smart lists and smart filters</li>
                         <li>Access key company information</li>
                         <li>Buy and sell stocks in a single click</li>
                     </ul>
-                    <button class="create-account" id="start-inv-button"></button>
+                    <button class="purple-filled-btn start-inv-btn">Start Investing</button>
                 </div>
             </div>
         </div>
         <div class="pricing-section-card">
-            <h1>Flat fees, no hidden <br> charges.</h1>
+            <h1 class="pricing-title">Flat fees, no hidden <br> charges.</h1>
             <img id="pricing-tree" src="./images/pricing-tree.png" alt="pricing tree image">
             <div class="pricing">
                 <div class="commisions">
-                    <h2>₹0</h2>
+                    <h2 class="price-text">₹0</h2>
                     <h4>Commissions</h4>
                     <h5>On investing in Mutual Funds and IPOs </h5>
                 </div>
                 <div class="maintenance">
-                    <h2>₹0</h2>
+                    <h2 class="price-text">₹0</h2>
                     <h4>Account Maintenance</h4>
                     <h5>To maintain your Demat Account*</h5>
                 </div>
                 <div class="Brokerage">
-                    <h2>₹20</h2>
+                    <h2 class="price-text">₹20</h2>
                     <h4>Brokerage</h4>
                     <h5>On Equity, F&O, commodity and <br> currency orders </h5>
                 </div>
+            </div>
                 <div class="pricing-bottom-row">
-                    <button class="btn-start-investing">Start Investing</button>
+                    <button class="white-filled-btn">Start Investing</button>
                     <p>*Zero AMC is applicable for users onboarded from August 2021 onwards.</p>
                 </div>
-            </div>
+           
         </div>
 
         <div class="calculator-button">
-            <button class="outlined-btn" id="brokerage-calc">Brokerage calculator</button>
-            <button class="outlined-btn" id="margin-calc">Margin calculator</button>
+            <button class="outlined-btn calc-btn" id="brokerage-calc">Brokerage calculator</button>
+            <button class="outlined-btn calc-btn" id="margin-calc">Margin calculator</button>
         </div>
 
         <div class="benefit-section">
-            <div class="benefit-section-title">
-                <h5 class="orange-text-title">BENEFITS</h5>
-                <h2 class="big-subtitle-black">We make investing work for you</h2>  
+            <div class="benefit-section-title centre-align" >
+                <h5 class="section-subtitle-red">BENEFITS</h5>
+                <h2 class="section-title">We make investing work for you</h2>  
                 </div>
                 <div class="benefit-card-row1">
 
-                    <div class="benefit-card-col1">
-                        <img src="./images/PAPERLESS.png" alt="Paperless image">
-                        <h5>PAPERLESS</h5>
+                    <div class="benefit-card-col benefit-card-1">
+                        <img id="benefit-card-img" src="./images/PAPERLESS.png" alt="Paperless image">
+                        <div class="card-text-bottom">
+                            <h5>PAPERLESS</h5>
                         <h2>Seamless account <br> opening</h2>
-                        <h3>Requires PAN + Aadhaar + eKYC only</h3>
+                        <p class="font-size-20">Requires PAN + Aadhaar + eKYC only</p>
+                        </div>
                     </div>
 
-                    <div class="benefit-card-col2">
-                        <img src="./images/benefit-card.png" alt="Benefits image">
-                        <h5>FAST</h5>
-                        <h2>Instant withdrawals</h2>
-                        <h3>Transfer funds from Upstox to your bank <br> account in just 15 minutes</h3>
+                    <div class="benefit-card-col benefit-card-2">
+                        <img id="benefit-card-img" src="./images/benefit-card.png" alt="Benefits image">
+                        <div class="card-text-bottom">
+                            <h5>FAST</h5>
+                        <h2>Instant withdrawals </h2>
+                        <p class="font-size-20">Transfer funds from Upstox to your bank <br> account in just 15 minutes</p>
+                    </div>
                     </div>
                 </div>
 
                 <div class="benefit-card-row2">
                     <div class="benefit-card-row2-col1">
                         <h5>EASY</h5>
-                        <h2>Learn. Decide. Invest.</h2>
-                        <h3>Learn all about investments from experts. Make informed decisions using smart tools. Invest easily with just a click.</h3>
+                        <h2 >Learn. Decide. Invest.</h2>
+                        <p class="font-size-20">Learn all about investments from experts. Make informed decisions using smart tools. Invest easily with just a click.</p>
                     </div>
 
                     <div class="benefit-card-row2-col2">
-                        <img src="./images/benefit-account-01.png" alt="Benefit account">
+                        <img class="benefit-jar-img" src="./images/benefit-account-01.png" alt="Benefit account">
                 </div>
             </div>
-            <button class="btn-start-investing">Start Investing</button>
+           
         </div>
 
         <div class="learning-section">
-            <div class="learning-title">
-                <h5 class="orange-text-title">LEARNING</h5>
-                <h2 class="big-subtitle-black">We simplify investments for you</h2> 
-                <h4 class="second-sub-title"> Everything you need to know about investments in under a few minutes from our experts.</h4> 
+           
+            <div class="learning-title centre-align">
+                <button class="purple-filled-btn start-inv-btn">Start Investing</button>
+                <h5 class="section-subtitle-red">LEARNING</h5>
+                <h2 class="section-title">We simplify investments for you</h2> 
+                <h4 class="section-subtitle-black"> Everything you need to know about investments in under a few minutes from our experts.</h4> 
             </div>
+
         <div class="learning-cards-container">
 
 
-            <div class="learning-card-col1">
+            <div class="learning-card-col">
                 <h4 class="purple-text">LEARN</h4>
                 <h2 class="learn-card-title"> Basics of Investments <br>#LearnWithUpstox ft. <br>Pranjal kamra</h2>
                 <h4 class="learn-card-body">A video series breaking <br> down the A-Z of <br> investing.</h4>
-                <img src="right-arrow" alt="Forward button">
+                <img class="forward-btn" src="./images/right-arrow.svg" alt="Forward button">
             </div>
 
-            <div class="learning-card-col2">
+            <div class="learning-card-col">
                 <h4 class="purple-text">WATCH</h4>
                 <h2 class="learn-card-title"> Market Analysis <br>#LearnWithUpstox ft. <br>Rachana Ranade</h2>
                 <h4 class="learn-card-body">A video series to learn <br>everything about Ratio <br>Analysis easily</h4>
-                <img src="right-arrow" alt="Forward button">
+                <img class="forward-btn" src="./images/right-arrow.svg" alt="Forward button">
             </div>
 
-            <div class="learning-card-col3">
+            <div class="learning-card-col">
                 <h4 class="purple-text">LEARN</h4>
                 <h2 class="learn-card-title"> Technical Analysis <br>#LearnWithUpstox ft. <br>Pranjal kamra</h2>
                 <h4 class="learn-card-body">A video series to learn how <br> to analyse stocks using <br>charts</h4>
-                <img src="right-arrow" alt="Forward button">
+                <img class="forward-btn" src="./images/right-arrow.svg" alt="Forward button">
             </div>
-
-            <div class="In the Press">
-                <h2 class="big-subtitle-black">In the Press</h2> 
+        </div>
+    </div>
+    
+            <div class="centre-align">
+                <h2 class="section-title ">In the Press</h2> 
             </div>
-            <div class="press-logos">
+            <div class="press-logos centre-align">
                 <img class="press-logos" src="./images/news-1.png" alt="FirstPost-logo">
                 <img class="press-logos" src="./images/news-2.png" alt="TOI-logo">
                 <img class="press-logos" src="./images/news-3.png" alt="BS-logo">
@@ -244,100 +256,103 @@
                 <img class="press-logos" src="./images/news-5.png" alt="mint-logo">
                 <img class="press-logos" src="./images/news-6.png" alt="ET-logo">
             </div>
-        </div>
-        </div>
+       
 
         <div class="customers-section">
-            <div class="customers-title">
-                <h2 class="big-subtitle-black">For you. And everyone.</h2> 
-                <h4 class="second-sub-title">We enable lakhs of Indians to achieve their financial dreams.</h4> 
+            <div class="customers-title centre-align">
+                <h2 class="section-title">For you. And everyone.</h2> 
+                <h4 class="section-subtitle-black">We enable lakhs of Indians to achieve their financial dreams.</h4> 
             </div>
                 <div class="customer-mosiac">
                    
                     <div class="cust-mosaic-col1">
-                        <img class="cust-mosaic-img" src="./images/invest.png" alt="Invest image1">
-                        <div class= "cust-mosaic-dummy-rect" id="cust-mosaic-row1-col2"></div>
+                        <img class="cust-mosaic-item" src="./images/invest.png" alt="Invest image1">
+                        <div class= "cust-mosaic-dummy-rect" id="cust-mosaic-col1-rect"></div>
                     </div>
 
                     <div class="cust-mosaic-col2">
-                        <div class= "cust-mosaic-dummy-rect" id="cust-mosaic-row1-col2"></div>
-                        <img class="cust-mosaic-img" src="./images/invest2.png" alt="Invest image2">
+                        <div class= "cust-mosaic-dummy-rect" id="cust-mosaic-col2-rect"></div>
+                        <img class="cust-mosaic-item" src="./images/invest2.png" alt="Invest image2">
                     </div>
 
                     <div class="cust-mosaic-col3">
-                        <img class="cust-mosaic-img" src="./images/invest3.png" alt="Invest image3">
-                        <div class= "cust-mosaic-dummy-rect" id="cust-mosaic-row2-col3"></div>
+                        <img class="cust-mosaic-item" src="./images/invest3.png" alt="Invest image3">
+                        <div class= "cust-mosaic-dummy-rect" id="cust-mosaic-col3-rect"></div>
                     </div>
                 </div>
-
-                <button class="btn-start-investing">Start Investing</button>
+                <div class="centre-align">
+                <button class="purple-filled-btn start-inv-btn">Start Investing</button>
+            </div>
         </div>
 
         <div class="testimonial">
+            <div class="centre-align">
             <img src="./images/heart.png" alt="Heart Image">
-        </div>
-        <h2 class="big-subtitle-black">Here are a few reasons you should choose Upstox:</h2> 
+       
+        <h2 class="section-title ">Here are a few reasons you should choose Upstox:</h2> 
+    </div>
+         </div>
         <div class="testimonial-container">
 
-            <div class="testimonial-col1">
-                <h4 class="second-sub-title">Best trading application so far Excellent user interface. Easy to search for stocks. Margin trading facility is good.</h4> 
+            <div class="testimonial-col">
+                <p class=" font-size-20 second-sub-title">Best trading application so far Excellent user interface. Easy to search for stocks. Margin trading facility is good.</p> 
                 <div class="testi-customer-name">
-                    <img src="./images/Kaju-the-Guy-1.png" alt="user1 image">
-                    <h4 class="second-sub-title">MAHAJAN ARMAAN</h4>
+                    <img class="cust-avatar" src="./images/Kaju-the-Guy-1.png" alt="user1 image">
+                    <p class=" font-size-20 second-sub-title">MAHAJAN ARMAAN</p>
                 </div>
-                    <h5 class="review-date">Reviewed on February 2021</h5>
+                <p class=" font-size-16 review-date">Reviewed on February 2021</p>
             </div>
 
-            <div class="testimonial-col2">
-                <h4 class="second-sub-title">One of the best trading platform. Smooth UI. All that you need for efficient trading, perfectly aligned and kept under a seamless platform!</h4> 
+            <div class="testimonial-col">
+                <p class=" font-size-20 second-sub-title">One of the best trading platform. All that you need for efficient trading, perfectly aligned and kept under a seamless platform!</p> 
                 <div class="testi-customer-name">
-                    <img src="./images/sk.png" alt="user2 image">
-                    <h4 class="second-sub-title">SAJAN K.</h4>
+                    <img class="cust-avatar" src="./images/sk.png" alt="user2 image">
+                    <p class=" font-size-20 second-sub-title">SAJAN K.</p>
                 </div>
-                    <h5 class="review-date">Reviewed on December 2020</h5>
+                    <p class=" font-size-16 review-date">Reviewed on December 2020</p>
             </div>
 
 
-            <div class="testimonial-col3">
-                <h4 class="second-sub-title">A reliable app and highly trustworthy. No one should avoid taking benefit from such a great service! Designed for speed and comfort!</h4> 
+            <div class="testimonial-col">
+                <p class=" font-size-20 second-sub-title">A reliable app and highly trustworthy. No one should avoid taking benefit from such a great service! Designed for speed and comfort!</p> 
                 <div class="testi-customer-name">
-                    <img src="./images/rb.png" alt="user3 image">
-                    <h4 class="second-sub-title">RIYA BORAH</h4>
+                    <img class="cust-avatar" src="./images/rb.png" alt="user3 image">
+                    <p class=" font-size-20 second-sub-title">RIYA BORAH</p>
                 </div>
-                    <h5 class="review-date">Reviewed on April 2020</h5>
+                <p class=" font-size-16 review-date">Reviewed on April 2020</p>
             </div>
         </div>
 
         <div class="awards">
-            <h2 class="big-subtitle-black">Awards & Accolades</h2> 
+            <h2 class="section-title centre-align">Awards & Accolades</h2> 
             <div class="award-cards-container">
 
-                <div class="award-card-col1">
+                <div class="award-card-col">
                     <div class="award-logo-container">
                         <img src="./images/award-cdsl-icon.png" alt="cdsl logo">
                     </div>
-                    <h4 class="second-sub-title">Highest number of Demat Accounts in a single month by CDSL in October 2021</h4>
+                    <p class=" font-size-20 second-sub-title">Highest number of Demat Accounts in a single month by CDSL in October 2021</p>
                 </div>
 
-                <div class="award-card-col2">
+                <div class="award-card-col">
                     <div class="award-logo-container">
                         <img src="./images/award-india-icon.png" alt="India Fintech logo">
                     </div>
-                    <h4 class="second-sub-title">Best innovation in wealth management in 2020</h4>
+                    <p class=" font-size-20 second-sub-title">Best innovation in wealth management in 2020</p>
                 </div>
 
-                <div class="award-card-col3">
+                <div class="award-card-col">
                     <div class="award-logo-container">
                         <img src="./images/award-cdsl-icon.png" alt="cdsl logo">
                     </div>
-                    <h4 class="second-sub-title">Highest number of accounts in a single month by a broker in (2019, 2020)</h4>
+                    <p class=" font-size-20 second-sub-title">Highest number of accounts in a single month by a broker in (2019, 2020)</p>
                 </div>
 
-                <div class="award-card-col4">
+                <div class="award-card-col">
                     <div class="award-logo-container">
                         <img src="./images/award-mcx-icon.png" alt="MCX logo">
                     </div>
-                    <h4 class="second-sub-title">Most promising broking house of the year by MCX in 2019</h4>
+                    <p class=" font-size-20 second-sub-title">Most promising broking house of the year by MCX in 2019</p>
                 </div>
             </div>
         </div>
@@ -348,27 +363,30 @@
             </div>
             <div class="download-app-col2">
                 <p>Download one of India's</p>
-                <h2>Best trading app</h2>
+                <h2 class="section-title">Best trading app</h2>
                 <div class="app-download-logo">
-                    <img src="./images/google-play.svg" alt="Google Play logo">
-                    <img src="./images/app-store.svg" alt="Appstore logo">
+                    <img class=download-app-icons src="./images/google-play.svg" alt="Google Play logo">
+                    <img class=download-app-icons src="./images/app-store.svg" alt="Appstore logo">
                 </div>
             </div>
         </div>
+        </div>
+   
 
         <footer>
-
+            <div class="body-contents">
             <div class="footer-row1">
                 <div class="footer-row1-col1">
-                    <img src="./images/upstrox-white-logo-footer.png" alt="Upstox logo">
-                    <p class="footer-text-regular">30th Floor, Sunshine Tower, Senapati Bapat Marg, Dadar (W), Mumbai, Maharashtra 400013</p>
-                    <img src="./images/google-play.svg" alt="Google play logo">
-                    <img src="./images/app-store.svg" alt="Appstore logo">
+                    <img class="upstox-footer-logo" src="./images/upstrox-white-logo-footer.png" alt="Upstox logo">
+                    <p class="font-small-12">30th Floor, Sunshine <br> Tower, Senapati Bapat <br> Marg, Dadar (W), Mumbai, <br> Maharashtra 400013</p>
+                    <img class="footer-download-icons" src="./images/download-playStore.png" alt="Google play logo">
+                    <br>
+                    <img class="footer-download-icons" src="./images/download-appStore.png" alt="Appstore logo">
                 </div>
 
                 <div class="footer-row1-col2">
                     <h4 class="footer-row1-title"> Products</h4>
-                    <ul>
+                    <ul class="no-bullets font-small-12">
                         <li class="footer-menu-list">Pro web</li>
                         <li class="footer-menu-list">Pro mobile</li>
                         <li class="footer-menu-list">Mutual Funds</li>
@@ -384,7 +402,7 @@
 
                 <div class="footer-row1-col3">
                     <h4 class="footer-row1-title"> Company</h4>
-                    <ul>
+                    <ul class="no-bullets font-small-12">
                         <li class="footer-menu-list">About Us</li>
                         <li class="footer-menu-list">Market Talk</li>
                         <li class="footer-menu-list">Brokerage Charges</li>
@@ -398,7 +416,7 @@
 
                 <div class="footer-row1-col4">
                     <h4 class="footer-row1-title"> Services</h4>
-                    <ul>
+                    <ul class="no-bullets font-small-12">
                         <li class="footer-menu-list">Demat Account</li>
                         <li class="footer-menu-list">Trading Account</li>
                         <li class="footer-menu-list">Commodity Trading</li>
@@ -413,18 +431,18 @@
 
                 <div class="footer-row1-col5">
                     <h4 class="footer-row1-title"> Social</h4>
-                    <ul>
-                        <li class="footer-menu-list"><i class="fa-brands fa-twitter"></i>Twitter</li>
-                        <li class="footer-menu-list"><i class="fa-brands fa-telegram"></i>Telegram</li>
-                        <li class="footer-menu-list"><i class="fa-brands fa-linkedin-in"></i>Linkedin</li>
-                        <li class="footer-menu-list"><i class="fa-brands fa-youtube"></i>Youtube</li>
-                        <li class="footer-menu-list"><i class="fa-brands fa-instagram"></i>Instagram</li>
+                    <ul class="no-bullets font-small-12">
+                        <li class="footer-menu-list"><i class="social-icons fa-brands fa-twitter"></i>Twitter</li>
+                        <li class="footer-menu-list"><i class="social-icons fa-brands fa-telegram"></i>Telegram</li>
+                        <li class="footer-menu-list"><i class="social-icons fa-brands fa-linkedin-in"></i>Linkedin</li>
+                        <li class="footer-menu-list"><i class="social-icons fa-brands fa-youtube"></i>Youtube</li>
+                        <li class="footer-menu-list"><i class="social-icons fa-brands fa-instagram"></i>Instagram</li>
                 </div>
             </div>
 
             <div class="footer-row-2">
                 <h4 class="footer-text-bold">Stocks</h4>
-                <ul>
+                <ul class="horizontal-menu ">
                     <li class="a-z-horizontal">A</li>
                     <li class="a-z-horizontal">B</li>
                     <li class="a-z-horizontal">C</li>
@@ -451,25 +469,25 @@
                     <li class="a-z-horizontal">X</li>
                     <li class="a-z-horizontal">Y</li>
                     <li class="a-z-horizontal">Z</li>
-                    <li><a href="others/" class="a-z-horizontal">Others</li>
+                    <li class="a-z-horizontal">Others</li>
                 </ul>
             </div>
 
             <div class="footer-expand-menu-container">
-                <ul>
-                    <li>Popular Stocks</li>
-                    <li>Future & Options</li>
-                    <li>Indian Indices</li>
-                    <li>Calculators</li>
-                    <li>Learning Center</li>
-                    <li>More</li>
-                </ul>
-                <ul>
-                    <li>Banking</li>
-                    <li>Savings Account</li>
-                    <li>Saving Schemes</li>
-                    <li>IPO Learn</li>
-                    <li>F&O - Learning</li>
+                <ul class="horizontal-menu font-small-12">
+                    <li>Popular Stocks +</li>
+                    <li>Future & Options +</li>
+                    <li>Indian Indices +</li>
+                    <li>Calculators +</li>
+                    <li>Learning Center +</li>
+                    <li>More+</li>
+                </ul >
+                <ul class="horizontal-menu font-small-12">
+                    <li>Banking +</li>
+                    <li>Savings Account +</li>
+                    <li>Saving Schemes +</li>
+                    <li>IPO Learn +</li>
+                    <li>F&O - Learning +</li>
                 </ul>
             </div>
 
@@ -498,7 +516,7 @@
             </div>
             <div class="footer-btm-container">
                 <div class="footer-btm-left">
-                    <ul>
+                    <ul class="horizontal-menu font-small-12 footer-btm-left-text">
                         <li>Sitemap</li>
                         <li>Terms of Use and Privacy Policy</li>
                         <li>Trust &#038; Security</li>
@@ -508,13 +526,10 @@
                         <li>Careers</li>
                     </ul>
                 </div>
-                <div class="footer-btm-right">
+                <div class="footer-btm-right font-small-12">
                     <p>Made with ❤️ in India | Copyright &copy; 2023, <a href="https://upstox.com/"><em>Upstox</p>
                 </div>
-
-
-
-
+            </div>
             </div>
         </footer>
     

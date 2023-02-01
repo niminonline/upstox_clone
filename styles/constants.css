@@ -3,7 +3,7 @@
     --purple: #41246e;
     --lightblue:#77cece;
     --darkblue:#2c0d5b;
-    --lightpurple: #d0bcff;
+    --verylightpurple: #d0bcff;
     --orange: #ff9c7f;
     --yellow: #ffd27c;
     --skyblue: #9beaea;
@@ -12,8 +12,13 @@
     --white: #fff;
     --text: #262626;
     --red:#db542a;
+    --gold:#eca74e;
     --transp-black:rgba(0,0,0,.5);
     --search-bg-grey:#f2f2f2;
-    --text-color-grey:#4b4b4b;
+    --grey:#4b4b4b;
     --black:#000;
+    --lightgrey:#f1efeb;
+    --darkpurple:#43165c;
+    --lightpurple:#edeae6;
+    --aluminium:#a09568
 }

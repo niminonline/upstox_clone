@@ -9,14 +9,81 @@ body{
 .horizontal-menu{
     display:flex;
     list-style: none;
+    padding-left:0;
+    padding-right: 20px;
 }
 .font-small-12{
     font-size: 12px;
-    line-height: 15px;
+    line-height: 25px;
+
 }
 .font-14-h5{
     font-size: 14px;
     margin:0px 0px;
+}
+.font-size-20{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -.33px;
+    line-height: 28px;
+    margin:5px;
+}
+.font-size-16{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -.18px;
+
+   
+
+}
+.no-bullets{
+    list-style: none;
+    padding:0px;
+    line-height: 30px;
+}
+.body-contents-main{
+    width:70%;
+    margin: auto;
+
+}
+.body-contents{
+    width:60%;
+    margin: auto;
+}
+.section-title{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--black);
+    margin-bottom: 40px;
+    margin-top:40px;
+}
+.section-subtitle-red{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 16px;
+    letter-spacing: -.09px;
+    color:var(--red);
+    margin-top: 120px;;
+}
+.section-subtitle-black{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 15px;
+    color: var(--black);
+    letter-spacing: -.33px;
+}
+.section-body-black{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -.33px;
+    color:var(--black);
+    line-height: 28px;
 }
 .navbar-fullwidth{
     display: flex;
@@ -25,6 +92,7 @@ body{
     width: 100%;
     position:sticky;
     top:0;
+    z-index: 10;
     background-color: var(--white);
     box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.1);
 
@@ -80,7 +148,7 @@ padding: 6px;
     width:220px;
     background-color: var(--search-bg-grey);
 }
-#create-account{
+.purple-filled-btn{
     margin-left: 20px;
     background-color: var(--purple);
     width:128px;
@@ -91,7 +159,7 @@ padding: 6px;
     border: none;
     font-size: 14px;
 }
-#sign-in{
+.outlined-btn{
     margin-left: 20px;
     width:100px;
     height: 38px;
@@ -100,6 +168,7 @@ padding: 6px;
     font-weight: 900;
     border: 1px solid #41246e;
     font-size: 14px;
+    background-color: var(--white);
 }
 
 .banner-main{
@@ -108,12 +177,12 @@ padding: 6px;
     width:100%;
     padding: none;
     background-image: -webkit-linear-gradient(330deg,var(--darkblue)12%,var(--purple)20%,var(--white) 75%);
+    margin-bottom: 100px;
 }
 .banner-contents{
-    width:70%;
-    padding: 40px;
+    
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 .banner-left-section{
     margin: none;
@@ -170,9 +239,10 @@ padding: 0px 10px;
 .charge-cards-container{
     width: 38vw;
     display: flex;
-    justify-content: space-between;
     margin-top: 40px;
- 
+}
+.brokerage{
+    margin-left:20px;
 }
 .charge-card{
     width:226px;
@@ -183,12 +253,16 @@ padding: 0px 10px;
     line-height: 8px;
     padding: 10px;
 }
+.charge-card p{
+    margin-left: 0px;
+    line-height: 15px;
+ 
+}
 .banner-bottom{
     display: flex;
-    padding:20px;
-    width:30vw;
-    height: 56px;
-    line-height: 30px;
+    padding-top:20px;
+    width:35vw;
+    height: 45px;
 }
 
 .banner-btm-row1{
@@ -201,13 +275,13 @@ align-items: center;
 }
 .banner-btm-col{
     border-right: 1px solid var(--white);
-    padding:15px;
-    width:120px;
-    height: 50px;
+    padding:10px;
+    width:130px;
+    height: 45px;
 }
 .banner-btm-col h6{
 font-size: 14px;
-padding: 0px;
+padding-top: 10px;
 margin: 0px;
 font-weight: 600;
 }
@@ -221,7 +295,7 @@ font-weight: 600;
     width:24px;
     height:24px;
     margin-left: 10px;
-    padding-top: 0px;;
+    padding-top: 0px;
 }
 .tiger-global-cont{
     height: 22px;
@@ -230,5 +304,357 @@ font-weight: 600;
     border-radius: 5px;
     text-align: center;
     align-items: center;
-    padding: 2px;
+    margin-left: 10px;
+}
+.banner-right-section{
+    width: 624px;
+    height: 640px;
+    padding: 0px;
+
+}
+.banner-right-section img{
+    width: 600px;
+    height: 625px;
+}
+.asset-heading{
+    text-align: center;
+}
+.ways-to-grow-items li:first-child{
+    opacity: 1;   
+    border-bottom: 5px solid var(--purple);
+}
+.ways-to-grow-items{
+    justify-content: center;
+}
+.ways-to-grow-items li{
+padding:10px 80px 20px 80px;
+padding-bottom: 20px;
+font-size: 20px;
+line-height: 24px;
+font-weight: 600;
+color: var(--purple);
+opacity: .5;
+border-bottom: 2px solid var(--black);
+}
+.stocks{
+    display: flex;
+    margin-top:60px;
+    justify-content: center;
+    margin-bottom: 250px;
+
+}
+#stocks-title{
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--purple);
+    margin-top: 5px;
+}
+.stocks-col2{
+    padding-left: 100px;
+}
+.stocks-bullets{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--grey);
+}
+.start-inv-btn{
+    padding:10px;
+    margin:20px 0px;
+    width:150px;
+    height: 50px;
+}
+.pricing-section-card{
+   width: 950px;
+    height:580px;
+    background-color: var(--purple);
+    border-radius: 16px;
+    position: relative;
+    color: var(--white);
+    margin: auto;
+}
+.pricing-title{
+font-size: 48px;
+line-height: 56px;
+letter-spacing: -1.07px;
+padding: 80px 80px 20px 80px;
+}
+.pricing{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#pricing-tree{
+    position: absolute;
+    right: 60px;
+    top:-80px;
+}
+.price-text{
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 700;
+    margin: 5px 0px;
+
+}
+.pricing-bottom-row{
+    display: flex;
+    padding:40px;
+    justify-content: space-between;
+}
+.white-filled-btn{
+    margin-left: 20px;
+    background-color: var(--white);
+    width:163px;
+    height: 52px;
+    border-radius: 40px;
+    color: var(--purple);
+    font-weight: 900;
+    border: none;
+    font-size: 14px;
+}
+.calculator-button{
+    margin:40px 0px;
+    text-align: center;
+}
+
+.calc-btn{
+    background-color: var(--white);
+    width:449px;
+    height:54px;
+
+}
+
+.benefit-card-row1{
+    display: flex;
+    justify-content: center;
+    margin-bottom:20px;
+    
+}
+
+.benefit-card-col{
+    width: 470px;
+    height:443px;
+    border-radius: 16px;
+    margin:20px;
+}
+#benefit-card-img{
+    float: right;
+    width:200px;
+    height: 200px;
+    margin-top: 50px;
+}
+.card-text-bottom{
+padding-top:200px;
+padding-left: 50px;
+}
+.benefit-card-1{
+background-color: var(--lightyellow);
+
+}
+.benefit-card-2{
+background-color: var(--orange);
+}
+.benefit-card-row2{
+    width:990px;
+    height:407px;
+    background-color: var(--lightblue);
+    border-radius: 16px;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin: auto;
+    
+}
+.benefit-card-row2-col1{
+    margin-top:200px;
+    padding-left:40px;
+}
+
+.benefit-card-row2-col2{
+    padding-top:52px;
+}    
+.centre-align{
+    text-align: center;
+}
+.learning-cards-container{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.learning-title button{
+margin-top:50px;
+}
+.learning-card-col{
+    background-color: var(--lightpurple);
+    border-radius: 8px;
+    border: 1px solid var(--black);
+    width:260px;
+    height: 320px;
+    padding: 30px;
+    margin-bottom: 100px;
+
+}
+.purple-text{
+    color: var(--purple);
+}
+.forward-btn{
+padding:20px;
+border: 2px solid var(--black);
+border-radius: 50px;
+}
+
+.press-logos{
+    margin-bottom:80px;
+}
+.customer-mosiac{
+    display: flex;
+    justify-content: center;
+}
+.cust-mosaic-item{
+    border-radius: 20px;
+    margin: 10px;  
+
+}
+.cust-mosaic-dummy-rect{
+    margin: 10px;  
+width:310px;
+height:150px;
+border-radius: 20px;
+}
+#cust-mosaic-col1-rect{
+    background-color: var(--lightblue);
+}
+#cust-mosaic-col2-rect{
+    background-color: var(--orange);
+}
+#cust-mosaic-col3-rect{
+    background-color: var(--gold);
+}
+.testimonial{
+    margin-top:80px;
+}
+
+.testimonial-container{
+    display: flex;
+}
+.testimonial-col{
+    margin: 10px;
+}
+.testi-customer-name{
+    display: flex;
+    margin-top: 50px;
+   
+    
+    
+}
+.cust-avatar{
+    width:32px;
+    height:32px;
+}
+.award-logo-container{
+width:210px;
+height:180px;
+border:1px solid var(--grey);
+opacity: .5;
+border-radius: 8px;
+text-align: center;
+margin-top: 50px;
+}
+.award-logo-container img{
+    margin-top: 50px;
+}
+.award-card-col{
+    width:210px;
+}
+.award-cards-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;;
+}
+.download-app{
+    width:930px;
+    height:348px;
+    background-color: var(--lightgrey);
+    display: flex;
+    padding: 30px 30px 0px 30px;
+    border-radius: 30px;
+    justify-content: center;
+    margin: auto;
+}
+.download-app-icons{
+    width:150px;
+    height: 50px;
+}
+.download-app-col2{
+    margin:50px;
+}
+footer{
+    background-color: var(--darkpurple);
+    margin-top:150px;
+    padding-top: 40px;
+    color: var(--white);
+}
+.footer-row1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.upstox-footer-logo{
+    width: 110;
+    height: 32px;
+
+}
+.footer-download-icons{
+    width:140px;
+    height:42px;
+    margin-bottom: 10px;
+
+}
+.footer-row1-title{
+    margin-top:0px;
+    color: var(--aluminium);
+}
+.footer-row-2{
+    display: flex;
+    color: var(--white);
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(148, 23, 250, 0.5); 
+}
+.footer-row-2 ul li{
+padding: 10px;
+border-right: 1px solid var(--white);
+}
+.footer-row-2 ul li:last-child{
+    border-right:none;
+}
+
+.footer-expand-menu-container ul li{
+padding-left: 60px;
+padding-top:10px;
+    padding-bottom:10px;
+
+
+}
+.footer-btm-container{
+    display: flex;
+    justify-content: space-between;
+}
+.social-icons{
+    padding-right: 10px;
+}
+.footer-expand-menu-container{
+    
+border-bottom: 1px solid rgba(148, 23, 250, 0.5);
+} 
+.footer-para-text{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    color: #eeebe6!important;
+    opacity: .5;
+}
+.footer-btm-left-text li{
+    padding-right: 20px;
+
 }
